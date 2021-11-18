@@ -46,8 +46,8 @@ public class LoginController implements Initializable
     private PasswordField lblContraseña;
     @FXML
     private Label lblError;
-    @FXML
     private String nombre2;
+    @FXML
     private Button btnIngresar;
     private Connection conexion;
     private Statement estado;
