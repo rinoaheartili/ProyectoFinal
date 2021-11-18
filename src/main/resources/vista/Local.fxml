@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.LocalController">
+   <children>
+      <Label layoutX="172.0" layoutY="14.0" text="Administrar Locales">
+         <font>
+            <Font name="Book Antiqua" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="mostrarDatos" layoutX="21.0" layoutY="45.0" prefHeight="200.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="56.00006103515625" text="ID" />
+          <TableColumn fx:id="nombre" prefWidth="147.199951171875" text="Nombre" />
+            <TableColumn fx:id="direccion" prefWidth="219.20001220703125" text="Direccion" />
+            <TableColumn fx:id="municipio" prefWidth="136.79998779296875" text="Municipio" />
+        </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="273.0" text="Datos del Local">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="257.0" prefHeight="8.0" prefWidth="600.0" />
+      <Label layoutX="21.0" layoutY="304.0" text="Id" />
+      <Label layoutX="21.0" layoutY="336.0" text="Nombre" />
+      <Label layoutX="20.0" layoutY="367.0" prefHeight="18.0" prefWidth="59.0" text="Direccion" />
+      <Label layoutX="20.0" layoutY="399.0" prefHeight="18.0" prefWidth="59.0" text="Municipio" />
+      <TextField fx:id="txtId" layoutX="98.0" layoutY="300.0" />
+      <TextField fx:id="txtNombre" layoutX="98.0" layoutY="332.0" />
+      <TextField fx:id="txtDireccion" layoutX="98.0" layoutY="364.0" />
+      <TextField fx:id="txtMunicipio" layoutX="98.0" layoutY="396.0" />
+      <Button layoutX="281.0" layoutY="289.0" mnemonicParsing="false" onAction="#agregar" text="Agregar" />
+      <Button layoutX="277.0" layoutY="331.0" mnemonicParsing="false" onAction="#modificar" text="Modificar" />
+      <Button fx:id="btnBuscar" layoutX="284.0" layoutY="372.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+      <Label alignment="CENTER" layoutX="393.0" layoutY="286.0" prefHeight="31.0" prefWidth="158.0" text="Ingresa todos los campos" textAlignment="JUSTIFY" />
+      <Label alignment="CENTER" layoutX="401.0" layoutY="328.0" prefHeight="31.0" prefWidth="142.0" text="Ingresa todos los campos" textAlignment="JUSTIFY" />
+      <Label alignment="CENTER" layoutX="393.0" layoutY="369.0" prefHeight="31.0" prefWidth="158.0" text="Ingresa solo el ID" textAlignment="JUSTIFY" />
+      <Label fx:id="lblError" alignment="CENTER" contentDisplay="CENTER" layoutX="291.0" layoutY="408.0" prefHeight="18.0" prefWidth="233.0" textAlignment="CENTER">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

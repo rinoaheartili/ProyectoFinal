@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="281.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PrincipalController">
+   <children>
+      <Label layoutX="90.0" layoutY="13.0" text="Control de Cocina">
+         <font>
+            <Font name="Book Antiqua" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClientes" layoutX="37.0" layoutY="181.0" mnemonicParsing="false" onAction="#clientes" text="Clientes" />
+      <Button fx:id="btnProductos" layoutX="80.0" layoutY="94.0" mnemonicParsing="false" onAction="#productos" text="Productos" />
+      <Button fx:id="btnSalidas" layoutX="211.0" layoutY="94.0" mnemonicParsing="false" onAction="#salidas" text="Salidas" />
+      <Button fx:id="btnEmpleados" layoutX="137.0" layoutY="181.0" mnemonicParsing="false" onAction="#empleados" text="Empleados" />
+      <Button layoutX="205.0" layoutY="244.0" mnemonicParsing="false" onAction="#Salir" text="Salir" />
+      <Label layoutX="109.0" layoutY="51.0" prefHeight="18.0" prefWidth="130.0" text="Productos y ventas">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="143.0" text="Registros">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="8.0" layoutY="138.0" prefHeight="6.0" prefWidth="359.0" />
+      <Separator layoutX="7.0" layoutY="45.0" prefHeight="6.0" prefWidth="359.0" />
+      <Separator layoutX="7.0" layoutY="218.0" prefHeight="6.0" prefWidth="359.0" />
+      <Button fx:id="btnLocales" layoutX="256.0" layoutY="181.0" mnemonicParsing="false" onAction="#locales" text="Locales" />
+   </children>
+</AnchorPane>

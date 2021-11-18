@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.EmpleadoController">
+   <children>
+      <Label layoutX="154.0" layoutY="14.0" text="Administrar Empleados">
+         <font>
+            <Font name="Book Antiqua" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="251.0" text="Datos del Empleado">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="282.0" text="ID" />
+      <Label layoutX="37.0" layoutY="317.0" text="Nombre" />
+      <Label layoutX="37.0" layoutY="346.0" text="Apellido Paterno" />
+      <Label layoutX="39.0" layoutY="387.0" text="Contraseña" />
+      <Label layoutX="37.0" layoutY="428.0" prefHeight="18.0" prefWidth="44.0" text="Correo" />
+      <TextField fx:id="txtId" layoutX="165.0" layoutY="278.0" />
+      <TextField fx:id="txtNombre" layoutX="165.0" layoutY="313.0" />
+      <TextField fx:id="txtApePaterno" layoutX="165.0" layoutY="346.0" />
+      <TableView fx:id="mostrarDatos" layoutX="12.0" layoutY="45.0" prefHeight="182.0" prefWidth="628.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="53.60000228881836" text="ID" />
+          <TableColumn fx:id="nombre" prefWidth="156.00006103515625" text="Nombre" />
+            <TableColumn fx:id="apellidoP" prefWidth="137.5999298095703" text="Apellido Paterno" />
+            <TableColumn fx:id="contrasena" prefWidth="118.39996337890625" text="Contraseña" />
+            <TableColumn fx:id="correo" prefWidth="158.40008544921875" text="Correo" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="434.0" layoutY="255.0" prefHeight="31.0" prefWidth="158.0" text="Ingresa todos los campos" textAlignment="JUSTIFY" />
+      <Label alignment="CENTER" layoutX="442.0" layoutY="297.0" prefHeight="31.0" prefWidth="142.0" text="Ingresa todos los campos" textAlignment="JUSTIFY" />
+      <Label alignment="CENTER" layoutX="430.0" layoutY="380.0" prefHeight="31.0" prefWidth="158.0" text="Ingresa solo el ID" textAlignment="JUSTIFY" />
+      <Label alignment="CENTER" layoutX="430.0" layoutY="339.0" prefHeight="31.0" prefWidth="158.0" text="Ingresa solo el ID" textAlignment="JUSTIFY" />
+      <PasswordField fx:id="txtContrasena" layoutX="165.0" layoutY="383.0" />
+      <TextField fx:id="txtCorreo" layoutX="165.0" layoutY="424.0" />
+      <Button layoutX="344.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnAgregar" text="Agregar" />
+      <Button layoutX="344.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnEliminar" text="Eliminar" />
+      <Button layoutX="341.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnModificar" text="Modificar" />
+      <Button fx:id="btnBuscar" layoutX="348.0" layoutY="383.0" mnemonicParsing="false" onAction="#btnBuscar" text="Buscar" />
+      <Label fx:id="lblError" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="436.0" prefHeight="18.0" prefWidth="277.0" textAlignment="CENTER">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font></Label>
+      <Separator layoutY="238.0" prefHeight="2.0" prefWidth="656.0" />
+      <Button fx:id="btnReporte" layoutX="328.0" layoutY="432.0" mnemonicParsing="false" onAction="#mostrarReporte" text="Mostrar Reporte" />
+   </children>
+</AnchorPane>
